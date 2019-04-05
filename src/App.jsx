@@ -16,7 +16,7 @@ class App extends Component {
   updateWeather() {
     const { city, numForcastDays } = this.state;
 
-    const URL = `http://api.apixu.com/v1/forecast.json?key=${weatherKey}&q=${city}&days=${numForcastDays}`;
+    const URL = `https://api.apixu.com/v1/forecast.json?key=${weatherKey}&q=${city}&days=${numForcastDays}`;
 
     //make a request to collect data from the weather API
     axios
