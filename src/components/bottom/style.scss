@@ -1,0 +1,35 @@
+.bottom-container {
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(50, 255, 255, 0.5)),
+    url(../../resources/images//four-seasons.jpg) center no-repeat;
+
+  background-size: cover;
+  display: flex;
+
+  .inner-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+.forcastday-container {
+  width: 8em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.forecast-header {
+  margin-left: 10px;
+}
+
+.forecast-table {
+  border: 1px #ddd;
+  padding: 4px;
+}
