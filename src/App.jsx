@@ -10,7 +10,12 @@ const weatherKey = "d8feebbbf21149399bc194448190504";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { city: "Toronto", numForcastDays: 7, isLoading: true };
+    this.state = {
+      city: "Toronto",
+      numForcastDays: 7,
+      isLoading: true,
+      loadingError: false
+    };
   }
 
   updateWeather() {
@@ -35,7 +40,7 @@ class App extends Component {
         });
       })
       .catch(err => {
-        console.log(err);
+        alert("Location not found, please try a different location ");
       });
   }
 
